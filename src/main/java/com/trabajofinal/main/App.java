@@ -1,10 +1,12 @@
 package com.trabajofinal.main;
 
+import com.trabajofinal.gui.AltaPoliza01;
+
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hola gays");
+            AltaPoliza01 altaPoliza = new AltaPoliza01();
+            altaPoliza.setVisible(true);
 
 	}
 
