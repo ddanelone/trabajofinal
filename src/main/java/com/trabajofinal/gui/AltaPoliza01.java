@@ -4,6 +4,8 @@
  */
 package com.trabajofinal.gui;
 
+import java.awt.image.BufferedImage;
+
 /**
  *
  * @author Diego
@@ -14,14 +16,18 @@ public class AltaPoliza01 extends javax.swing.JFrame {
      * Creates new form AltaPoliza01
      */
     public AltaPoliza01() {
-        initComponents();
-        setSize(900, 600);
-        setResizable(false);
-        setTitle("Alta de Póliza");
-        setLocationRelativeTo(null);
-        
-        
-    }
+    super("Alta de Póliza");
+
+    // Establece un ícono transparente para evitar que se muestre el ícono de Java
+    BufferedImage transparentImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
+    setIconImage(transparentImage);
+
+    initComponents();
+    setSize(900, 600);
+    setResizable(false);
+    setLocationRelativeTo(null);
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -136,7 +142,7 @@ public class AltaPoliza01 extends javax.swing.JFrame {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, 30));
+        jPanel4.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 30));
 
         jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
