@@ -40,7 +40,6 @@ public class AltaPoliza01 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        txt_nro_cliente = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -54,8 +53,16 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
@@ -65,6 +72,8 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jTextField6 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -73,15 +82,8 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setText("Ingrese los datos de la póliza para el cliente :");
+        jLabel2.setText("Ingrese los datos de la póliza para el cliente:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 16, 550, 50));
-
-        txt_nro_cliente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_nro_clienteActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txt_nro_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 180, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 70));
 
@@ -96,63 +98,112 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jComboBox1.setBackground(new java.awt.Color(220, 220, 220));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 140, 30));
+        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 140, 30));
 
+        jComboBox2.setBackground(new java.awt.Color(220, 220, 220));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 140, 30));
+        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 140, 30));
 
+        jComboBox3.setBackground(new java.awt.Color(220, 220, 220));
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel3.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 310, 30));
 
+        jComboBox4.setBackground(new java.awt.Color(220, 220, 220));
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel3.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 310, 30));
 
+        jComboBox5.setBackground(new java.awt.Color(220, 220, 220));
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel3.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 310, 30));
 
         jTextField1.setEditable(false);
+        jTextField1.setBackground(new java.awt.Color(220, 220, 220));
+        jTextField1.setForeground(new java.awt.Color(117, 126, 207));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
         jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 310, 30));
+
+        jTextField2.setBackground(new java.awt.Color(220, 220, 220));
         jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 310, 30));
+
+        jTextField3.setBackground(new java.awt.Color(220, 220, 220));
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 310, 30));
+
+        jTextField4.setBackground(new java.awt.Color(220, 220, 220));
         jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 310, 30));
+
+        jTextField5.setBackground(new java.awt.Color(220, 220, 220));
         jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 310, 30));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel5.setText("*");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel6.setText("*");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel7.setText("*");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel8.setText("*");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel9.setText("*");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel10.setText("*");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel11.setText("*");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel12.setText("*");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel13.setText("*");
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, -1, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 450, 530));
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jCheckBox1.setText("¿Alarma?");
-        jCheckBox1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 30));
-
         jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jCheckBox2.setText("¿Dispositivo de rastreo satelital?");
+        jCheckBox2.setText("¿Alarma?");
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
-        jPanel4.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 310, 30));
+        jPanel4.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 310, 30));
 
         jCheckBox3.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -167,7 +218,7 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(52, 162, 224));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Agregar hijos");
-        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 120, 30));
+        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 120, 30));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -192,12 +243,12 @@ public class AltaPoliza01 extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 290, 90));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 310, 90));
 
         jButton2.setBackground(new java.awt.Color(52, 162, 224));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Continuar");
-        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 100, 30));
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 100, 30));
 
         jButton3.setBackground(new java.awt.Color(255, 128, 146));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -207,19 +258,36 @@ public class AltaPoliza01 extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 100, 30));
+        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 450, 100, 30));
 
         jTextField6.setEditable(false);
+        jTextField6.setBackground(new java.awt.Color(220, 220, 220));
+        jTextField6.setForeground(new java.awt.Color(117, 126, 207));
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 310, 30));
+        jPanel4.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 310, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("El vehículo posee:");
         jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 140, -1));
+
+        jCheckBox4.setBackground(new java.awt.Color(255, 255, 255));
+        jCheckBox4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jCheckBox4.setText("¿Dispositivo de rastreo satelital?");
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox4ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 310, 30));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel4.setText("*");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, -1, -1));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 450, 530));
 
@@ -238,10 +306,6 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox3ActionPerformed
@@ -254,9 +318,9 @@ public class AltaPoliza01 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void txt_nro_clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nro_clienteActionPerformed
+    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_nro_clienteActionPerformed
+    }//GEN-LAST:event_jCheckBox4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -297,17 +361,27 @@ public class AltaPoliza01 extends javax.swing.JFrame {
     public javax.swing.JButton jButton1;
     public javax.swing.JButton jButton2;
     public javax.swing.JButton jButton3;
-    public javax.swing.JCheckBox jCheckBox1;
     public javax.swing.JCheckBox jCheckBox2;
     public javax.swing.JCheckBox jCheckBox3;
+    public javax.swing.JCheckBox jCheckBox4;
     public javax.swing.JComboBox<String> jComboBox1;
     public javax.swing.JComboBox<String> jComboBox2;
     public javax.swing.JComboBox<String> jComboBox3;
     public javax.swing.JComboBox<String> jComboBox4;
     public javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -320,6 +394,5 @@ public class AltaPoliza01 extends javax.swing.JFrame {
     public javax.swing.JTextField jTextField4;
     public javax.swing.JTextField jTextField5;
     public javax.swing.JTextField jTextField6;
-    public javax.swing.JTextField txt_nro_cliente;
     // End of variables declaration//GEN-END:variables
 }
